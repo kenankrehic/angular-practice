@@ -1,0 +1,19 @@
+.default{
+	background-color:grey;
+}
+
+.drama{
+	background-color: orange;
+}
+.horor{
+	background-color: skyblue;
+}
+.comedy{
+	background-color: pink;
+}
+.western{
+	background-color: brown;
+}
+.scifi{
+	background-color: blue;
+}

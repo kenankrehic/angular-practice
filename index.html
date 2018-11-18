@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<link rel="stylesheet" href="style.css">
+<head>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="main.css">
+	<title>Angular 1</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="app.js"> </script>
+
+</head>
+<body ng-controller="mainController">
+
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-2">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Genre</th>
+									</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="movie in allMovies">
+				<td>{{movie.name}}</td>
+				<td ng-class="classType">{{movie.genre}}</td>
+				
+			</tr>
+		</tbody>
+		</table><br>
+		<input type="text" class="form-control" ng-model="classType" placeholder="Enter Class Name">
+		<h1>{{classType}}</h1>
+	</div>
+</div>
+
+
+
+<script src="movieDB.js"></script>
+</body>
+</html>
